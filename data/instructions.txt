@@ -1,0 +1,71 @@
+------------------------------------------------------------------------------------------------------
+commands are not case sensitive, so feel free to type in lower :)
+------------------------------------------------------------------------------------------------------
+
+This is a logic gate simulator, what it does is it gives you 3 main components
+
+You can add any number of components from these types and connect them with wire,
+change the INPUTS to see whats the OUTPUT is gonna be.
+
+for that you have to use commands.
+commands are basically orders giving into your computer.
+
+the first keyword is what you want to do,
+
+There are 5 commands you can use,
+    1.ADD - Add new components to the workspace
+    2.CON - Connect wires between components 
+    3.TOG - Toggle inputs on or off(1/0)
+    4.OUT - Output the state of a component
+    5.REF - Refresh the workspace
+
+and the following keywords goes as shown below,
+------------------------------------------------------------------------------------------------------
+1. ADD
+structure --->  ADD name type 
+
+You can use any name for the second parameter.
+there are 3 types of components(use the short term of the words given).
+    1.INPUT   - in
+    2.PROCESS - pro
+    3.OUTPUT  - out
+
+process is basically a NAND gate, NAND gate is a universal logic gate,
+what does that mean is you can make any logic gates only using NAND gates.
+
+after adding components to the workspace you have to connect them.
+------------------------------------------------------------------------------------------------------
+2.CON
+structure --->  CON source target pin
+
+As before you can choose the name as you like.
+The signal flows from SOURCE --> TARGET, type the source component name,
+followed by target component name(Use the name you used when adding).
+
+There are two pins in a processing unit(NAND gate)
+    1.nd1
+    2.nd2
+use these names when connecting each pins
+You only need target pin when connecting.
+------------------------------------------------------------------------------------------------------
+3.TOG
+structure --->  TOG name state
+
+Used to Toggle the state of an input.
+use the input's name you want to toggle and the state(use 1 or 0)
+------------------------------------------------------------------------------------------------------
+4.OUT
+structure --->  OUT name
+
+Outputs the selected component state.
+this isn't only for the output component. you can check any component state using OUT.
+------------------------------------------------------------------------------------------------------
+5.REF
+structure --->  REF
+
+Refreshes the workspace entirely.
+After any change in the wire connection, the workspace must be Refreshed.
+!!Change in the wire connection only!!
+You don't have to refresh everytime after adding components.
+------------------------------------------------------------------------------------------------------
+Thank you!
