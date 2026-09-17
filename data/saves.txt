@@ -1,0 +1,3 @@
+test
+in1,InputComponent;in2,InputComponent;g1,ProcessComponent;out1,OutputComponent;
+in1,g1,nd1;in2,g1,nd2;g1,out1,nd;
